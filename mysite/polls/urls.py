@@ -1,7 +1,9 @@
 from django.urls import path
 
-from . import views
+from .views import PollQuestions, index
+
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('', index, name='index'),
+    path('questions/', PollQuestions.as_view(), name='questions')
 ]

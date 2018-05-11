@@ -1,0 +1,18 @@
+{% load render_bundle from webpack_loader %}
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="UTF-8">
+ <title>Questions</title>
+ </head>
+<body>
+ <h1>Questions</h1>
+ <div id="react"></div>
+<script>
+  window.props = {{ props|safe }};
+  window.react_mount = document.getElementById('react');
+</script>
+  {% render_bundle 'main' %}
+
+ </body>
+</html>
