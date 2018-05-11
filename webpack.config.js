@@ -13,7 +13,7 @@ module.exports = {
   },
 
   plugins: [
-    new BundleTracker({filename: './djangoproject/webpack-stats.json'}),
+    new BundleTracker({filename: './mysite/webpack-stats.json'}),
   ],
   module: {
     rules: [
